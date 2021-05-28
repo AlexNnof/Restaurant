@@ -1,0 +1,251 @@
+/*===========
+mobile Layout
+=============*/
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    background-color: black;
+    font-family: 'Dancing Script','Arial';
+}
+
+h1{
+    font-family: 'Lobster', 'Arial';
+    padding-left: 20px;
+}
+
+/*===========
+    Nav
+=============*/
+nav{
+    margin: 0;
+    display: block;
+    width: 100%;
+    font-size: 3rem;
+    background-color: black;
+    top: 0;
+}
+
+#navLogo{
+    padding-right: 30px;
+    color: gold;
+}
+
+#navList{
+    margin: 0;
+    padding: 0;
+    justify-self: flex-start;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+#navList a{
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    border: solid 2px black;
+}
+
+#navList a:hover{
+    background-color: gold;
+    color: black;
+    border: solid 2px gold;
+    width: 40%;
+}
+
+#covid{
+    margin: 0;
+    background-color: yellow;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+}
+
+#covid p{
+    margin: 0;
+    border: black solid 2px;
+}
+
+#covid p a{
+    margin: 0;
+    color: black;
+    text-decoration: none;
+}
+/*=========
+    main
+===========*/
+#mainArticle{
+    font-size: 3rem;
+    height: 150VW;
+    background-image: url("../Images/mae-mu-spagetii.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#hiden{
+    color: black;
+}
+
+#mainArticle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#mainArticle p{
+    text-align: center;
+}
+
+#mainArticle #btn{
+    margin: auto;
+    font-size: 3rem;
+    text-decoration: none;
+    color: white;
+    border: gold solid 8px;
+    background-color: black;
+}   
+
+.article{
+    border: gold solid 4px;
+    margin: 8% 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#qote{
+    margin: auto;
+    width: 50%;
+}
+
+#qote img{
+    width: 100%;
+}
+
+.imgs{
+    width: inherit;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.imgs img{
+    width: 100%;
+}
+
+form{
+    margin-left: 20%;
+    font-size: 3rem;
+    color: gold;
+}
+
+form div{
+    display: block;
+    margin: 10%;
+}
+
+form label{
+    width: 100%;
+    margin: 5%;
+}
+
+form input{
+    width: 10rem;
+    height: 2rem;
+}
+
+form select{
+    width: 10rem;
+    height: 2rem;
+}
+
+img {
+    width: 100%;
+}
+/*===========
+    Footer
+=============*/
+
+footer div{
+    width: 100%;
+    margin: auto;
+    background-image: url(../Images/bastien-nvs-Luve.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#footerul{
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    list-style: none;
+    font-size: 2rem;
+}
+
+#footerul li{
+    margin: 10%;
+}
+
+#footerul li a{
+    text-decoration: none;
+    color: gold;
+    background-color: black;
+    border: gold solid 5px;
+    margin: 8%;
+    text-align: center;
+}
+
+
+iframe{
+    width: 100%;
+}
+
+#menuText{
+    text-align: center;
+}
+
+/*===========
+Laptop Layout
+=============*/
+@media (min-width: 768px) {
+
+    h1{
+        font-size: 3rem;
+    }
+
+    .article{
+        display: flex;
+    }
+
+    .article .imgs{
+        order: 2;
+    }
+
+    .article div p{
+        order: 1;
+        font-size: 3rem;
+        text-align: center;
+        margin: 50% 0;
+    }
+
+    .article div{
+        width: 50%;
+    }
+
+    .article text{
+        margin-top: 25%;
+       justify-self: center;
+    }
+
+    #menuText{
+        font-size: 2rem;
+    }
+
+    #footerul li{
+        margin: 10% 10% 10% 25%;
+    }
+}
+
