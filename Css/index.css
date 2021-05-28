@@ -21,6 +21,7 @@ h1{
 =============*/
 nav{
     margin: 0;
+    position: sticky;
     display: block;
     width: 100%;
     font-size: 3rem;
